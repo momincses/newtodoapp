@@ -1,0 +1,53 @@
+.mainContainer{
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    background-color: #D4F4CD;
+    bottom: 0px;
+    display: grid;
+    z-index: 100;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.navItem{
+    width: 20vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+
+.navImage{
+    width: 100%;
+    height: auto;
+    max-width: 25px;
+    opacity: .7;
+}
+
+
+.add img{
+    scale: 1.5;
+    filter: invert(100%);
+    opacity: 1;;
+}
+
+.add::before {
+    content: "";
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    
+    max-height: 70px;
+    max-width: 70px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #273C2C;
+}
+
+.active img{
+    opacity: 1;
+    color: #5052fe;
+    filter: drop-shadow(0 0 0 #273c2cc9), brightness(50%);
+}

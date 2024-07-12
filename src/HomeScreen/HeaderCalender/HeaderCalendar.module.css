@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+
+.mainContainer{
+    position: fixed;
+    box-sizing: border-box;
+    height: 35vh;
+    width: 100vw;
+    background-color: #D4F4CD;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.todayDate {
+    height: 20%;
+    width: 70%;
+    text-align: left;
+    font-size: 25px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display:flex;
+    align-items: end;
+}
+
+.buttons{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    border: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img{
+    height: 15px;
+    width: 15px;
+    /* opacity: ; */
+}
+
+.calendar {
+    height: 50%;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.dayNames, .datesOfWeek {
+    display: grid;  
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dayName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dateOfWeek{
+    box-sizing: border-box;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+
+    transition: all 0.3s linear;
+}
+
+.dateOfWeek:hover {
+    background-color: #4e735775;
+}
+
+.active{
+    background-color: #273c2cc9;
+    color: white;
+    scale: 1.1;
+    border: 2px solid #305237;
+    box-shadow: 3px 3px 5px #273c2cc9;
+}
+
+.expandCalendar{
+    padding: 1vh;
+    width: 90%;
+}

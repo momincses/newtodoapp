@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+.mainContainer {
+  position: relative;
+  top: 35vh;
+  box-sizing: border-box;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+}
+
+.titleContainer {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.title {
+  height: 100%;
+  padding-left: 10px;
+  width: 90%;
+  font-size: 24px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.title span {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(128, 128, 128);
+}
+
+.title span:hover {
+  color: black;
+}
+
+.taskList,
+.noTask {
+  height: 90vh;
+  width: 96%;
+  /* overflow-y: scroll; */
+  padding-bottom: 20vh;
+  /* margin-top: 1vh; */
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d4f4cd6f;
+  border-radius: 10px;
+  /* box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.534); */
+  /* border: 1px solid black; */
+}
+
+.taskItem::-webkit-scrollbar {
+  display: none;
+}
+
+.taskItem {
+  box-sizing: border-box;
+  height: 12vh;
+  width: 96%;
+  margin-top: 1vh;
+  display: flex;
+  border: .5px solid rgba(0, 0, 0, 0.507);
+  border-radius: 10px;
+  background-color: #fff;
+  /* box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.526); */
+}
+
+.taskTitle {
+  height: 35%;
+  white-space: nowrap;      /* Prevent text from wrapping to the next line */
+  overflow: hidden;         /* Hide any text that overflows the container */
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+
+.noTask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(106, 106, 106);
+}
+
+.noTask img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.add img {
+  height: 25px;
+  width: 25px;
+  filter: invert(100%);
+}
+
+.add {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 2vh;
+  background-color: #273c2c;
+}
+
+.priorityFlag {
+  height: 100%;
+  width: 5%;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.taskContent {
+  box-sizing: border-box;
+  padding-left: 3%;
+  height: 100%;
+  width: 75%;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: black;
+  overflow: hidden;
+}
+
+.taskDateTime {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  width: 100%;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.627);
+}
+
+.taskTag{
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    background-color: #ddffdbd6;
+    padding: 0px 4px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.627);
+}
+
+.taskTag img {
+  height: 20px ;
+  width: 20px ;
+}
+
+.editButton{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: right;
+    padding-top: 1vh;
+}
+
+.doneBox{
+  margin-right: 5px;
+
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background: rgb(253, 248, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete {
+  margin-right: 5px;
+}
+
+.checkMark{
+    font-size: 16px;
+}
+
+.taskDate img , .taskTime img{
+  height: 15px;
+}
